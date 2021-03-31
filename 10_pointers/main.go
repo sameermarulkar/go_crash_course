@@ -4,7 +4,7 @@ import "fmt"
 
 func main() {
 	a := 5
-	b := &a
+	b := &a	// assigning b to the pointer of a
 
 	fmt.Println(a, b)
 	fmt.Printf("%T\n", b)

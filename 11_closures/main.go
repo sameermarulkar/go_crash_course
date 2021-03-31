@@ -1,3 +1,5 @@
+// closures == annonymous functions
+
 package main
 
 import "fmt"
@@ -11,8 +13,11 @@ func adder() func(int) int {
 }
 
 func main() {
-	sum := adder()
+	add := adder()				// here we are assigning the return response of adder i.e. func [annonymous function] to a variable add 
+	
+	fmt.Println("%T", add)
+
 	for i := 0; i < 10; i++ {
-		fmt.Println(sum(i))
+		fmt.Println(add(i))
 	}
 }

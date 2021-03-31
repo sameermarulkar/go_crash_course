@@ -1,9 +1,12 @@
+// there are no classes in go; structs are as close to getting there 
+
 package main
 
 import (
 	"fmt"
 	"strconv"
 )
+
 
 // Define person struct
 type Person struct {
@@ -17,12 +20,18 @@ type Person struct {
 	age                               int
 }
 
-// Greeting method (value reciever)
+
+// methods for structs dont go inside it [like the way class methods do in Python]
+// value receiver methods are just for grabbing the values
+// pointer receiver methods are for changing the values associated with an object
+
+
+// Greeting method (value receiver)
 func (p Person) greet() string {
 	return "Hello, my name is " + p.firstName + " " + p.lastName + " and I am " + strconv.Itoa(p.age)
 }
 
-// hasBirthday method (pointer reciever)
+// hasBirthday method (pointer receiver)
 func (p *Person) hasBirthday() {
 	p.age++
 }

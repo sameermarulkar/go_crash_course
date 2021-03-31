@@ -3,8 +3,8 @@ package main
 import "fmt"
 
 func main() {
-	// Define map
-	// emails := make(map[string]string)
+	// Define map --> key, value pairs (dicts)
+	// emails := make(map[string]string)	make(map[key_data-type] value_data-type)
 
 	//  Assign kv
 	// emails["Bob"] = "bob@gmail.com"

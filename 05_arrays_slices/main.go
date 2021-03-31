@@ -6,7 +6,7 @@ import (
 
 func main() {
 	// Arrays
-	// var fruitArr [2]string
+	// var fruitArr [2]string - arrays have to be fixed lengths
 
 	// // Assign values
 	// fruitArr[0] = "Apple"
@@ -18,7 +18,7 @@ func main() {
 	// fmt.Println(fruitArr)
 	// fmt.Println(fruitArr[1])
 
-	fruitSlice := []string{"Apple", "Orange", "Grape", "Cherry"}
+	fruitSlice := []string{"Apple", "Orange", "Grape", "Cherry"}	// slices == variable lengthed arrays. note the curly braces
 
 	fmt.Println(len(fruitSlice))
 	fmt.Println(fruitSlice[1:3])

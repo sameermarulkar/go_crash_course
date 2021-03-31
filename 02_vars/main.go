@@ -17,15 +17,15 @@ func main() {
 	// Using var
 	// var name = "Brad"
 	var age int32 = 37
-	const isCool = true
+	const isCool = true 		// cannot re-define consts
 	var size float32 = 2.3
 
 	// Shorthand
-	// name := "Brad"
+	// name := "Brad"			// this only works when under a function - for global declarations you have to use the var keyword
 	// email := "brad@gmail.com"
 
 	name, email := "Brad", "brad@gmail.com"
 
 	fmt.Println(name, age, isCool, email)
-	fmt.Printf("%T\n", size)
+	fmt.Printf("%T\n", size)	// %T is for identifying the type(size)
 }

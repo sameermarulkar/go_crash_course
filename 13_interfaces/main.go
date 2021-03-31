@@ -1,3 +1,5 @@
+// interfaces == data-types defining method signatures for structs [abstract classes]
+
 package main
 
 import (
